@@ -142,8 +142,7 @@ def update_ledger_tpc(ledger: EmployeeLedger) -> float:
     """Recalculate TPC from the ledger's stored component scores and return it."""
     tpc = calculate_tpc(ledger.tcr, ledger.aes, ledger.oqi)
     logger.debug(
-        "TPC for employee %s: %.4f (TCR=%.2f, AES=%.2f, OQI=%.2f)",
-        ledger.employee_id,
+        "TPC for employee [REDACTED]: %.4f (TCR=%.2f, AES=%.2f, OQI=%.2f)",
         tpc,
         ledger.tcr,
         ledger.aes,

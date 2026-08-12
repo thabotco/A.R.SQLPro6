@@ -262,7 +262,7 @@ class OdooClient:
                 [vals],
                 {"context": {"allowed_company_ids": [company_id]}},
             )
-            logger.info("Created payslip id=%s for employee %s", rec_id, entry["employee_id"])
+            logger.info("Created payslip id=%s for employee [REDACTED]", rec_id)
             created_ids.append(rec_id)
 
         return created_ids

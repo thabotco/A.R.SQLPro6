@@ -138,7 +138,7 @@ class SprintManager:
             goals=goals or [],
         )
         self._sprints[sprint.id] = sprint
-        logger.info("Created sprint %s for employee %s", sprint.id[:8], self.employee_id)
+        logger.info("Created sprint %s for employee [REDACTED]", sprint.id[:8])
         return sprint
 
     # ------------------------------------------------------------------
